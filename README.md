@@ -82,9 +82,9 @@ function compute(num) {
     return result;
 }
 ```
-O(n) this iterates from 0 to the input and performs one expression per operation
+Fibonacci sequence.  O(n) this iterates from 0 to the input and performs one expression per operation
 
-## Efficient Search
+## An Efficient Search
 ```javascript
 function efficientSearch(array, item) {
     let minIndex = 0;
@@ -109,7 +109,7 @@ function efficientSearch(array, item) {
     return -1;
 }
 ```
-O(log n) Halves the search size every iteration assuming the array is sorted
+O(log n), logarithmic: halves the search size every iteration assuming the array is sorted
 
 ## Random Element
 ```javascript
@@ -119,19 +119,16 @@ function findRandomElement(arr) {
 ```
 O(1) This will run one expression no matter the input array size
 
-## Is It Prime?
+## What Am I?
 ```javascript
-function isPrime(n) {
-    // if n is less than 2 or a decimal, it's not prime
+function isWhat(n) {
     if (n < 2 || n % 1 != 0) {
         return false;
     }
-    // otherwise, check if `n` is divisible by any integer
-    // between 2 and n.
     for (let i = 2; i < n; ++i) {
         if (n % i == 0) return false;
     }
     return true;
 }
 ```
-O(n) Although this has a O(1) best case, the worst case is O(n) because there is one expression run on each iteration
+Checks if prime.  O(n) one expression run on each iteration
